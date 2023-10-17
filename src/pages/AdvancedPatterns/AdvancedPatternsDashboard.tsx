@@ -1,9 +1,7 @@
-const AdvancedPatternsDsahboard=()=>{
-    return (
-        <div>
-        AdvancedPatterns
-        </div>
-    )
-}
+import { PatternPicker } from "./components/PatternPicker";
+
+const AdvancedPatternsDsahboard = () => {
+  return <PatternPicker />;
+};
 
 export default AdvancedPatternsDsahboard;
