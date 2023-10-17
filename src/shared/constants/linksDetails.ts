@@ -1,4 +1,4 @@
-import { LinkInfo } from "types";
+import { LinkInfo, SideBarLinkInfo } from "types";
 
 export const linksDetails: Array<LinkInfo> = [
     { label: "Home", path: "/" },
@@ -6,8 +6,8 @@ export const linksDetails: Array<LinkInfo> = [
     { label: "About", path: "/about" }
   ];
 
-  export const sideBarLinksDetails: Array<LinkInfo> = [
-    { label: "Render props", path: "render_props" },
-    { label: "HOC", path: "hoc" },
-    { label: "Inversion of control", path: "ioc" },
+  export const sideBarLinksDetails: Array<SideBarLinkInfo> = [
+    { label: "Render props", path: "render_props", component:"RenderProps" },
+    { label: "HOC", path: "hoc", component:"HOC" },
+    { label: "Inversion of control", path: "ioc", component:"IOC" },
   ];

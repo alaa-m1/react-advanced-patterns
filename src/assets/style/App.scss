@@ -1,8 +1,5 @@
 @import "./partials/mixins";
 
-main {
-  padding: 10px;
-}
 //=== navigator style =====//
 .navigator-main-container {
   @include custom-box-shadow-with-border;
@@ -70,4 +67,19 @@ main {
 
 .central-container{
   @include central-with-shadow;
+}
+
+
+.code-container{
+  margin: 5px;
+  box-shadow:  0 0 1px 1px;
+  max-height: 400px;
+  text-align: left;
+  padding: 10px;
+  &:hover {
+    box-shadow: 0 0 2px 2px;
+  }
+  background-color:#EEEEFF;
+  overflow:auto;   
+  white-space: pre-line;
 }
