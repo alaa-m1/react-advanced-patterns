@@ -1,0 +1,73 @@
+@import "./partials/mixins";
+
+main {
+  padding: 10px;
+}
+//=== navigator style =====//
+.navigator-main-container {
+  @include custom-box-shadow-with-border;
+}
+
+.navigator-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background: rgb(92, 80, 231);
+  background: linear-gradient(
+    0deg,
+    rgba(92, 80, 231, 1) 50%,
+    rgba(9, 1, 77, 1) 100%
+  );
+  place-items: center;
+  .MuiToolbar-root {
+    width: 100%;
+  }
+}
+.logo-container {
+  flex-grow: 1;
+}
+.link-container {
+  flex-grow: 2;
+  place-items: center;
+  display: flex;
+  justify-content: space-between;
+  span {
+    margin: 0px 10px;
+    transition: color 0.2s ease-in;
+    &:hover {
+      color: #e76712;
+    }
+  }
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  @include custom-box-shadow-with-border;
+}
+
+//sidebar
+.sidebar-container {
+  .sidebar-item {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.sidebar-full {
+  transition: all 0.3s;
+  width: 250px;
+}
+.sidebar-min {
+  transition: all 0.3s;
+  width: 50px;
+}
+
+.central-container{
+  @include central-with-shadow;
+}
