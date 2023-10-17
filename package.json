@@ -1,5 +1,6 @@
 {
   "name": "react-advanced-patterns",
+  "homepage": "https://alaa-m1.github.io/react-advanced-patterns",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,6 +17,7 @@
     "@types/react": "^18.2.28",
     "@types/react-dom": "^18.2.13",
     "clsx": "^2.0.0",
+    "gh-pages": "^6.0.0",
     "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -33,7 +35,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy" : "pnpm run build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
