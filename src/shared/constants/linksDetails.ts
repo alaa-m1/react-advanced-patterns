@@ -9,5 +9,5 @@ export const linksDetails: Array<LinkInfo> = [
   export const sideBarLinksDetails: Array<SideBarLinkInfo> = [
     { label: "Render props", path: "render_props", component:"RenderProps" },
     { label: "HOC", path: "hoc", component:"HOC" },
-    { label: "Inversion of control", path: "ioc", component:"IOC" },
+    // { label: "Inversion of control", path: "ioc", component:"IOC" },
   ];

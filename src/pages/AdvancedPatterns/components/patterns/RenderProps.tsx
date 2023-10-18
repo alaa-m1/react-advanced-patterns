@@ -1,5 +1,9 @@
 import { Box, Typography } from "@mui/material";
 
+/**
+ * You can review Render Props Pattern examples in PatternContainer.tsx and PatternPicker.tsx
+ */
+
 export const RenderProps: React.FC = () => {
   return (
     <>
