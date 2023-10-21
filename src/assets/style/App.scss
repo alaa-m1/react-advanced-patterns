@@ -65,24 +65,38 @@
   width: 50px;
 }
 
-.central-container{
+.central-container {
   @include central-with-shadow;
 }
 
-
-.code-container{
+.code-container {
+  position: relative;
   margin: 5px;
-  box-shadow:  0 0 1px 1px;
+  box-shadow: 0 0 1px 1px;
   max-height: 400px;
   text-align: left;
   padding: 10px;
+  width: 70vw;
   &:hover {
     box-shadow: 0 0 2px 2px;
   }
-  background-color:#EEEEFF;
-  overflow:auto;   
+  background-color: #eeeeff;
+  overflow: auto;
   white-space: pre-line;
 }
-.code-info{
+
+.code-info {
   white-space: pre-line;
+}
+
+.clipboard-btn {
+  position: sticky;
+  top: 5px;
+  left: 96%;
+  width:0px;
+  display: inline-block;
+  cursor: pointer;
+  :hover {
+    box-shadow: 1px 1px 2px;
+  }
 }

@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import { CodeSection } from "shared";
 
 /**
  * You can review Render Props Pattern examples in PatternContainer.tsx and PatternPicker.tsx
@@ -6,29 +7,26 @@ import { Box, Typography } from "@mui/material";
 
 export const RenderProps: React.FC = () => {
   return (
-    <>
+    <Box>
       <Typography variant="h2" mb={1} sx={{ textAlign: "center" }}>
         RENDER PROPS
       </Typography>
       <Typography color="primary.light">
-       {`We build a component with a render prop. Which value is a function that returns a JSX element. <PatternContainer/>`}
+        {`We build a component with a render prop. Which value is a function that returns a JSX element. <PatternContainer/>`}
       </Typography>
-      <Box className="code-container" sx={{ color: "primary.light" }}>
-        <code>
-          {`export const PatternPicker = () => {
+      <CodeSection>
+        {`export const PatternPicker = () => {
               const patternPicker = usePatternPicker();
               
               return <PatternContainer render={(p) => patternPicker(p)}></PatternContainer>;
             };`}
-        </code>
-      </Box>
+      </CodeSection>
       <Typography color="primary.light">
         This component simply calls the render prop, instead of implementing its
         own rendering logic.{" "}
       </Typography>
-      <Box className="code-container" sx={{ color: "primary.light" }}>
-        <code>
-          {`export const PatternContainer = (props: PatternContainerProps) => {
+      <CodeSection>
+        {`export const PatternContainer = (props: PatternContainerProps) => {
             const [searchParams] = useSearchParams();
 
             const currentPattern = useMemo(
@@ -50,8 +48,7 @@ export const RenderProps: React.FC = () => {
             type PatternContainerProps = {
             render: (currentPattern: string) => React.ReactNode;
             };`}
-        </code>
-      </Box>
-    </>
+      </CodeSection>
+    </Box>
   );
 };

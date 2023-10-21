@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import { CodeSection, ExternalLink } from "shared";
 
 /**
  * You can review Higher Order Component Pattern example in the following repository and App
@@ -8,7 +9,7 @@ import { Box, Typography } from "@mui/material";
 
 export const HOC = () => {
   return (
-    <>
+    <Box>
       <Typography variant="h2" mb={1} sx={{ textAlign: "center" }}>
         Higher Order Component
       </Typography>
@@ -19,8 +20,7 @@ export const HOC = () => {
          HOC returns a wrapped component with all tha additional logic.
          HOC typically starts with the word with – This is not a required but this is just as a standard-`}
       </Typography>
-      <Box className="code-container" sx={{ color: "primary.light" }}>
-        <code>
+      <CodeSection>
           {`import { Box, Typography } from "@mui/material";
             import { useCallback, useState } from "react";
             import { useTranslation } from "react-i18next";
@@ -78,13 +78,11 @@ export const HOC = () => {
             left: 50%;
             transform: translate(-50%, -50%);
             \`;`}
-        </code>
-      </Box>
+      </CodeSection>
       <Typography color="primary.light">
         Then we can use our HOC as the following:
       </Typography>
-      <Box className="code-container" sx={{ color: "primary.light" }}>
-        <code>
+      <CodeSection>
           {`const CardImage = ({
             imagePath,
             altInfo,
@@ -104,37 +102,14 @@ export const HOC = () => {
             );
             };
             const CardImagewithLoadingIndicator = withLoadingIndicator(CardImage, "");`}
-        </code>
-      </Box>
+      </CodeSection>
       <Typography color="primary.light">
         To review the full example, you can check the following repository and
         App
         <br />
       </Typography>
-
-      <Box
-        component={"a"}
-        href="https://phoenix-ecommerce.netlify.app/modern-collection"
-        target="_blank"
-        rel="noopener noreferrer"
-        sx={{ textDecoration: "none" }}
-      >
-        <Typography component="span" sx={{ color: "primary.light" }}>
-          https://phoenix-ecommerce.netlify.app/modern-collection
-        </Typography>
-      </Box>
-      <br />
-      <Box
-        component={"a"}
-        href="https://github.com/alaa-m1/ecommerce-website-react-reactquery-redux/tree/master/src/shared/HOC"
-        target="_blank"
-        rel="noopener noreferrer"
-        sx={{ textDecoration: "none" }}
-      >
-        <Typography component="span" sx={{ color: "primary.light" }}>
-          https://github.com/alaa-m1/ecommerce-website-react-reactquery-redux/tree/master/src/shared/HOC
-        </Typography>
-      </Box>
-    </>
+      <ExternalLink url="https://phoenix-ecommerce.netlify.app/modern-collection" />
+      <ExternalLink url="https://github.com/alaa-m1/ecommerce-website-react-reactquery-redux/tree/master/src/shared/HOC" />
+    </Box>
   );
 };

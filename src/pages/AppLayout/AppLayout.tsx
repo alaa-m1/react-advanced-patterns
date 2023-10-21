@@ -4,9 +4,6 @@ import {
   Toolbar,
   useMediaQuery,
   useTheme,
-  Button,
-  FormControlLabel,
-  Typography,
   IconButton,
 } from "@mui/material";
 import { Link, Outlet, useLocation } from "react-router-dom";
