@@ -1,6 +1,6 @@
 {
   "name": "react-advanced-patterns",
-  "homepage": "https://alaa-m1.github.io/advanced-patterns",
+  "homepage": "https://alaa-m1.github.io/react-advanced-patterns",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,10 +20,12 @@
     "gh-pages": "^6.0.0",
     "lodash": "^4.17.21",
     "react": "^18.2.0",
+    "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
     "react-spinners": "^0.13.8",
+    "react-toastify": "^9.1.3",
     "recoil": "^0.7.7",
     "sass": "^1.69.3",
     "styled-components": "^6.1.0",
@@ -36,8 +38,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy" : "pnpm run build",
-    "deploy" : "gh-pages -b master -d build"
+    "predeploy": "pnpm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -58,6 +60,7 @@
     ]
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.199"
+    "@types/lodash": "^4.14.199",
+    "@types/react-copy-to-clipboard": "^5.0.6"
   }
 }

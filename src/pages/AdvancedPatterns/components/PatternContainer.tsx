@@ -12,9 +12,9 @@ export const PatternContainer = (props: PatternContainerProps) => {
   return (
     <Box sx={{ margin: "10px" }}>
       <Typography color="primary.light" mb={1}>
-        You can review each React patterns in details in the following path:
+        To review any patterns, select a pattern from the left Sidebar menu.
         <br />
-        src/AdvancedPatterns/components/patterns
+        You will find a real implementation for every pattern, not only a simple example without a real purpose
       </Typography>
       <ColoredDevider />
       {props.render(currentPattern)}

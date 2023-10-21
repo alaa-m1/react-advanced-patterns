@@ -1,18 +1,8 @@
-import Drawer from "@mui/material/Drawer";
-import {
-  IconButton,
-  Box,
-  Typography,
-  ListItemButton,
-  Toolbar,
-} from "@mui/material";
-import { MouseEvent, useState } from "react";
-
-import { Link } from "react-router-dom";
-import logoSrc from "assets/images/phoenix.png";
+import { IconButton, Box, Typography, ListItemButton } from "@mui/material";
+import { Link, useLocation, useSearchParams } from "react-router-dom";
 import { LinkInfo } from "types";
 import { StyledList } from "./components";
-import { sideBarLinksDetails } from "shared";
+import { StyledLink, sideBarLinksDetails } from "shared";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import clsx from "clsx";
@@ -22,7 +12,7 @@ type CustomDrawerProps = {
   isSmallScreen: boolean;
   onCloseSideBar: (value: boolean) => void;
 };
-const drawerWidth = 240;
+
 export const Sidebar = ({
   fullWidth,
   isSmallScreen,
@@ -32,6 +22,8 @@ export const Sidebar = ({
     ...sideBarLinksDetails,
     { path: "", label: "" },
   ];
+  const [searchParams] = useSearchParams();
+  const { pathname } = useLocation();
   return (
     <>
       <Box
@@ -49,6 +41,7 @@ export const Sidebar = ({
           <IconButton
             aria-label="Open menu drawer"
             onClick={() => onCloseSideBar(!fullWidth)}
+            sx={{ mt: 1 }}
           >
             {fullWidth ? <ArrowBackIosNewIcon /> : <ArrowForwardIosIcon />}
           </IconButton>
@@ -65,12 +58,18 @@ export const Sidebar = ({
                 alignItems: "center",
               }}
             >
-              <ListItemButton>
-                <Link style={{ width: "100%" }} to={"/advanced-patterns"}>
-                  <Typography sx={{ color: "primary.main" }}>
-                    React Patterns
-                  </Typography>
-                </Link>
+              <ListItemButton sx={{ padding: "0px", marginBottom: "10px" }}>
+                <StyledLink
+                  to={"/react-advanced-patterns"}
+                  isactive={
+                    pathname === "/react-advanced-patterns"
+                      ? "active"
+                      : "inActive"
+                  }
+                  style={{ width: "100%", padding: "8px 16px" }}
+                >
+                  React Patterns
+                </StyledLink>
               </ListItemButton>
 
               <IconButton
@@ -86,18 +85,19 @@ export const Sidebar = ({
                   <ListItemButton
                     key={index}
                     // onClick={() => setOpen(false)}
+                    sx={{ padding: "0px" }}
                   >
-                    <Link
-                      style={{ width: "100%" }}
-                      to={`/advanced-patterns?p=${link.path}`}
+                    <StyledLink
+                      to={`/react-advanced-patterns?p=${link.path}`}
+                      isactive={
+                        searchParams.get("p") === link.path
+                          ? "active"
+                          : "inActive"
+                      }
+                      style={{ width: "100%", padding: "8px 16px" }}
                     >
-                      <Typography
-                        sx={{ color: "primary.main" }}
-                        className="sidebar-item"
-                      >
-                        {link.label}
-                      </Typography>
-                    </Link>
+                      {link.label}
+                    </StyledLink>
                   </ListItemButton>
                 );
               return <div key={index}>&nbsp;</div>;
