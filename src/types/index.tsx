@@ -5,5 +5,5 @@ export type LinkInfo = {
 };
 
 export type SideBarLinkInfo = LinkInfo & {
-  component: string;
+  component?: string;
 };

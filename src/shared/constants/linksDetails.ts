@@ -6,7 +6,8 @@ export const linksDetails: Array<LinkInfo> = [
   ];
 
   export const sideBarLinksDetails: Array<SideBarLinkInfo> = [
-    { label: "Render props", path: "render_props", component:"RenderProps" },
-    { label: "HOC", path: "hoc", component:"HOC" },
-    { label: "Proxy", path: "proxy", component:"Proxy" },
+    { label: "Render props", path: "render_props" },
+    { label: "HOC", path: "hoc" },
+    { label: "Proxy", path: "proxy" },
+    { label: "Compound", path: "compound" },
   ];
