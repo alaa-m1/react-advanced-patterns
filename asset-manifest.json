@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-advanced-patterns/static/css/main.d7c35559.css",
-    "main.js": "/react-advanced-patterns/static/js/main.78c4372d.js",
+    "main.js": "/react-advanced-patterns/static/js/main.07f1d30b.js",
     "static/js/329.f5bd67ea.chunk.js": "/react-advanced-patterns/static/js/329.f5bd67ea.chunk.js",
     "index.html": "/react-advanced-patterns/index.html",
     "main.d7c35559.css.map": "/react-advanced-patterns/static/css/main.d7c35559.css.map",
-    "main.78c4372d.js.map": "/react-advanced-patterns/static/js/main.78c4372d.js.map",
+    "main.07f1d30b.js.map": "/react-advanced-patterns/static/js/main.07f1d30b.js.map",
     "329.f5bd67ea.chunk.js.map": "/react-advanced-patterns/static/js/329.f5bd67ea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d7c35559.css",
-    "static/js/main.78c4372d.js"
+    "static/js/main.07f1d30b.js"
   ]
 }
