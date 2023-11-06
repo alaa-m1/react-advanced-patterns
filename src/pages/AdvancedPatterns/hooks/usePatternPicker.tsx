@@ -1,5 +1,11 @@
 import React from "react";
-import { HOC, IOC, ProxyPattern, RenderProps } from "../components/patterns";
+import {
+  HOC,
+  IOC,
+  ProxyPattern,
+  RenderProps,
+  CompoundPattern,
+} from "../components/patterns";
 import _ from "lodash";
 
 const patterns: { [name: string]: React.ReactNode } = {
@@ -7,6 +13,7 @@ const patterns: { [name: string]: React.ReactNode } = {
   ioc: <IOC />,
   render_props: <RenderProps />,
   proxy: <ProxyPattern />,
+  compound: <CompoundPattern />,
 };
 
 export const usePatternPicker = () => {

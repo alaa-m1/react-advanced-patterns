@@ -17,7 +17,7 @@ export const HomeDashboard = () => {
           Alaa Mohammad
         </Typography>
         <Typography color="secondary.main">
-          Frontend Developer | React - JavaScript - TypeScript - Test Automation
+          Frontend Developer | React - JavaScript - TypeScript - Test Automation - React Native
           - Next.js | Software Developer
         </Typography>
       </Box>
