@@ -4,3 +4,4 @@ export * from "./RenderProps";
 export * from "./Proxy";
 export * from "./Compound";
 export * from "./ContainerPresentational";
+export * from "./LazyLoading";

@@ -5,7 +5,8 @@ import {
   ProxyPattern,
   RenderProps,
   CompoundPattern,
-  ContainerPresentational
+  ContainerPresentational,
+  LazyLoading
 } from "../components/patterns";
 import _ from "lodash";
 
@@ -16,6 +17,7 @@ const patterns: { [name: string]: React.ReactNode } = {
   proxy: <ProxyPattern />,
   compound: <CompoundPattern />,
   container_presentational: <ContainerPresentational />,
+  lazy_loading: <LazyLoading />,
 };
 
 export const usePatternPicker = () => {
