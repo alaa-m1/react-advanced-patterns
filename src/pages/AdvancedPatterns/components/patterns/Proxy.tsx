@@ -14,8 +14,9 @@ export const ProxyPattern = () => {
         Proxy
       </Typography>
       <Typography color="primary.light" className="code-info">
-        {`A proxy component is a reusable component. Which is a placeholder component for another component.
-          In Proxy pattern, we can determine the behavior when interacting with a certain component.`}
+        {`* A proxy component is a reusable component.
+          * In Proxy pattern, we can determine the behavior when interacting with a certain component by controlling the access to a component and adding an additional logic or a specific behavior before accessing that component. 
+          * It is a placeholder component for another component, acting as an intermediary (proxy) between the user (client) and that component.`}
       </Typography>
       <CodeSection>
         {`import { Alert, Box } from "@mui/material";

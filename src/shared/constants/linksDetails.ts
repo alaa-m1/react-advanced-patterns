@@ -10,4 +10,5 @@ export const linksDetails: Array<LinkInfo> = [
     { label: "HOC", path: "hoc" },
     { label: "Proxy", path: "proxy" },
     { label: "Compound", path: "compound" },
+    { label: "Container / Presentational", path: "container_presentational" },
   ];

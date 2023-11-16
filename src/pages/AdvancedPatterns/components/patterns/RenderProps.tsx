@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import { CodeSection } from "shared";
+import { CodeSection, ExternalLink } from "shared";
 
 /**
  * You can review Render Props Pattern examples in PatternContainer.tsx and PatternPicker.tsx
@@ -9,10 +9,11 @@ export const RenderProps: React.FC = () => {
   return (
     <Box>
       <Typography variant="h2" mb={1} sx={{ textAlign: "center" }}>
-        RENDER PROPS
+        Render Props
       </Typography>
-      <Typography color="primary.light">
-        {`We build a component with a render prop. Which value is a function that returns a JSX element. <PatternContainer/>`}
+      <Typography color="primary.light" className="code-info">
+      {`* Render Props pattern allows components to share functionality by using a common interface.
+        * We build a component with a render prop. Which value is a function that returns a JSX element. <PatternContainer/>`}
       </Typography>
       <CodeSection>
         {`export const PatternPicker = () => {
@@ -22,7 +23,7 @@ export const RenderProps: React.FC = () => {
             };`}
       </CodeSection>
       <Typography color="primary.light">
-        This component simply calls the render prop, instead of implementing its
+      * This component simply calls the render prop, instead of implementing its
         own rendering logic.{" "}
       </Typography>
       <CodeSection>
@@ -49,6 +50,11 @@ export const RenderProps: React.FC = () => {
             render: (currentPattern: string) => React.ReactNode;
             };`}
       </CodeSection>
+      <Typography color="primary.light">
+        To review the full example, you can check the following repository
+        <br />
+      </Typography>
+      <ExternalLink url="https://github.com/alaa-m1/react-advanced-patterns/blob/master/src/pages/AdvancedPatterns/components/PatternContainer.tsx" />
     </Box>
   );
 };

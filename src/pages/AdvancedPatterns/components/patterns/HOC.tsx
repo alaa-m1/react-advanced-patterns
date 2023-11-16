@@ -14,11 +14,11 @@ export const HOC = () => {
         Higher Order Component
       </Typography>
       <Typography color="primary.light" className="code-info">
-        {`HOC is a way to reuse the same logic in multiple components.
-         HOC is a component which we can take another component. 
-         HOC contains certain logic (methods ) that we want to apply to the component that we pass as a parameter.
-         HOC returns a wrapped component with all tha additional logic.
-         HOC typically starts with the word with – This is not a required but this is just as a standard-`}
+        {`* HOC is a way to reuse the same logic in multiple components.
+         * HOC is a component which we can take another component. 
+         * HOC contains certain logic (methods ) that we want to apply to the component that we pass as a parameter.
+         * HOC returns a wrapped component with all tha additional logic.
+         * HOC typically starts with the word with – This is not a required but this is just as a standard-`}
       </Typography>
       <CodeSection>
           {`import { Box, Typography } from "@mui/material";
