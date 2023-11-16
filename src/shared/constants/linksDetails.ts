@@ -11,4 +11,7 @@ export const linksDetails: Array<LinkInfo> = [
     { label: "Proxy", path: "proxy" },
     { label: "Compound", path: "compound" },
     { label: "Container / Presentational", path: "container_presentational" },
+    { label: "Lazy Loading", path: "lazy_loading" },
   ];
+
+  
