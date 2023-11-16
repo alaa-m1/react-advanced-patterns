@@ -14,11 +14,11 @@ export const CompoundPattern = () => {
       Compound
       </Typography>
       <Typography color="primary.light" className="code-info">
-        {`This pattern is used when we have two or more components working together and one of them is a parent component while the rest is a child component. 
-          So, compound components show relationships between components and allow them to work together to achieve a task.`}
+        {`* Compound pattern is used when we have two or more components working together and one of them is a parent component while the rest is a child component. 
+          * Compound components show relationships between components and allow them to work together to achieve a task.`}
       </Typography>
       <CodeSection>
-        {`  import { FormControl, InputLabel, MenuItem, Select, Typography } from "@mui/material";
+        {`import { FormControl, InputLabel, MenuItem, Select, Typography } from "@mui/material";
             import { useTranslation } from "react-i18next";
             import _ from "lodash";
             import { useMemo } from "react";
