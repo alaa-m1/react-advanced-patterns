@@ -93,7 +93,7 @@ const AppLayout = ({ links }: NavigationProps) => {
         <Box sx={{ flexGrow: 0 }}>
           <Sidebar isSmallScreen={isSmallScreen} fullWidth={open} onCloseSideBar={(v) => setOpen(v)} />
         </Box>
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{ flexGrow: 1 , overflowX:"auto"}}>
           <main>
             <Outlet />
           </main>
