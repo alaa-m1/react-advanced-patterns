@@ -17,11 +17,17 @@ export const HomeDashboard = () => {
           Alaa Mohammad
         </Typography>
         <Typography color="secondary.main">
-          Frontend Developer | React - JavaScript - TypeScript - Test Automation - React Native
-          - Next.js | Software Developer
+          Senior Frontend Developer | React - JavaScript - TypeScript - Next.js
+          - Test Automation | Software Developer
         </Typography>
       </Box>
-      <Box sx={{ display: "flex", justifyContent: "space-around" }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-around",
+        }}
+      >
         <ExternalLink
           url="https://www.linkedin.com/in/alaa-mohammad-767622199/"
           title="LinkedIn"
