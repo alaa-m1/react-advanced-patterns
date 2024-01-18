@@ -34,6 +34,7 @@ export const Sidebar = ({
       sx={{
         height: "100%",
         backgroundColor: "secondary.light",
+        maxWidth: isSmallScreen ? 150 : 250,
       }}
     >
       {!fullWidth && (
@@ -47,7 +48,7 @@ export const Sidebar = ({
       )}
       {fullWidth && (
         <StyledList
-          sx={{ width: "100%", maxWidth: 360 }}
+          sx={{ width: "100%", maxWidth: isSmallScreen ? 150 : 250 }}
           aria-labelledby="nested-list-subheader"
         >
           <Box

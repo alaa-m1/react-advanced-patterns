@@ -4,7 +4,7 @@ import EmailIcon from "@mui/icons-material/Email";
 
 export const Footer = () => {
   return (
-    <Box className="footer-section" sx={{ backgroundColor: "secondary.light" }}>
+    <Box className="footer-section" sx={{ backgroundColor: "secondary.light", overflow:"hidden" }}>
       <Box>
         <Link to={"/"}>
           <Typography color="primary.main">React Advanced Patterns</Typography>

@@ -39,6 +39,7 @@
 
 .footer-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   height: 50px;
@@ -62,7 +63,7 @@
 }
 .sidebar-min {
   transition: all 0.3s;
-  width: 50px;
+  width: 40px;
 }
 
 .central-container {
