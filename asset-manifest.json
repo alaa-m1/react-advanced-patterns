@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-advanced-patterns/static/css/main.d7c35559.css",
-    "main.js": "/react-advanced-patterns/static/js/main.de408af2.js",
+    "main.css": "/react-advanced-patterns/static/css/main.6bcdaba8.css",
+    "main.js": "/react-advanced-patterns/static/js/main.1bb935e0.js",
     "static/js/329.f5bd67ea.chunk.js": "/react-advanced-patterns/static/js/329.f5bd67ea.chunk.js",
     "index.html": "/react-advanced-patterns/index.html",
-    "main.d7c35559.css.map": "/react-advanced-patterns/static/css/main.d7c35559.css.map",
-    "main.de408af2.js.map": "/react-advanced-patterns/static/js/main.de408af2.js.map",
+    "main.6bcdaba8.css.map": "/react-advanced-patterns/static/css/main.6bcdaba8.css.map",
+    "main.1bb935e0.js.map": "/react-advanced-patterns/static/js/main.1bb935e0.js.map",
     "329.f5bd67ea.chunk.js.map": "/react-advanced-patterns/static/js/329.f5bd67ea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7c35559.css",
-    "static/js/main.de408af2.js"
+    "static/css/main.6bcdaba8.css",
+    "static/js/main.1bb935e0.js"
   ]
 }
