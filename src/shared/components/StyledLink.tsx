@@ -26,6 +26,9 @@ const LinkComponent = ({ children, ...props }: LinkComponentProps) => {
 const StyledLink = styled(LinkComponent)`
   font-weight: ${(p) => (p.isactive === "active" ? "bold" : "normal")};
   text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `;
 
 export { StyledLink };
