@@ -2,22 +2,22 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import { ColoredDevider, ExternalLink } from "shared";
 import { ProfilePhoto } from "./components";
+import parse from 'html-react-parser';
 
 export const HomeDashboard = () => {
+  const AboutMe=`<Strong>Hi, I'm Alaa Mohamed, I'm a senior frontend developer</Strong>.<br/>
+  I have worked in frontend development fields over the last six years.💻 <br/>
+  Before that I worked for over seven years as a software developer 🖥️.</br>
+  <Strong>My principles:</Strong> Work hard 👨‍💻, be kind, exercise regularly and enjoy live with my family 👨‍👩‍👧‍👦 .<br/>
+  I am self-motivated. I enjoy new challenges, collaborating with other developers and developing good software.`
   return (
     <Box m={2}>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          color: "secondary.dark",
-          mb: 3,
-        }}
-      >
-        <ProfilePhoto />
-        <Typography fontSize="20px" color="primary.light">
-          Alaa Mohammad
+      <Box mb={3}>
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <ProfilePhoto />
+        </Box>
+        <Typography fontSize="18px" color="primary.light" mb="10px">
+          {parse(AboutMe)}
         </Typography>
         <Typography
           color="secondary.main"
@@ -32,7 +32,7 @@ export const HomeDashboard = () => {
       <Typography
         fontSize="18px"
         color="primary.light"
-        style={{ textAlign: "center",marginBottom:"10px" }}
+        style={{ textAlign: "center", marginBottom: "10px" }}
       >
         Samples of my projects
       </Typography>
@@ -81,6 +81,13 @@ export const HomeDashboard = () => {
         </Box>
       </Box>
       <ColoredDevider />
+      <Typography
+        fontSize="18px"
+        color="primary.light"
+        style={{ textAlign: "center", marginBottom: "10px" }}
+      >
+       Contact me
+      </Typography>
       <Box
         sx={{
           display: "flex",
