@@ -2,14 +2,14 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import { ColoredDevider, ExternalLink } from "shared";
 import { ProfilePhoto } from "./components";
-import parse from 'html-react-parser';
+import parse from "html-react-parser";
 
 export const HomeDashboard = () => {
-  const AboutMe=`<Strong>Hi, I'm Alaa Mohamed, I'm a senior frontend developer</Strong>.<br/>
+  const ABOUT_ME = `<Strong>Hi, I'm Alaa Mohammad, I'm a senior frontend developer</Strong>.<br/>
   I have worked in frontend development fields over the last six years.💻 <br/>
   Before that I worked for over seven years as a software developer 🖥️.</br>
   <Strong>My principles:</Strong> Work hard 👨‍💻, be kind, exercise regularly and enjoy live with my family 👨‍👩‍👧‍👦 .<br/>
-  I am self-motivated. I enjoy new challenges, collaborating with other developers and developing good software.`
+  I am self-motivated. I enjoy new challenges, collaborating with other developers and developing good software.`;
   return (
     <Box m={2}>
       <Box mb={3}>
@@ -17,11 +17,12 @@ export const HomeDashboard = () => {
           <ProfilePhoto />
         </Box>
         <Typography fontSize="18px" color="primary.light" mb="10px">
-          {parse(AboutMe)}
+          {parse(ABOUT_ME)}
         </Typography>
         <Typography
           color="secondary.main"
           fontSize="16px"
+          fontWeight="bold"
           style={{ textAlign: "center" }}
         >
           Senior Frontend Developer | React - JavaScript - TypeScript - Next.js
@@ -31,6 +32,7 @@ export const HomeDashboard = () => {
       <ColoredDevider />
       <Typography
         fontSize="18px"
+        fontWeight="bold"
         color="primary.light"
         style={{ textAlign: "center", marginBottom: "10px" }}
       >
@@ -83,10 +85,11 @@ export const HomeDashboard = () => {
       <ColoredDevider />
       <Typography
         fontSize="18px"
+        fontWeight="bold"
         color="primary.light"
         style={{ textAlign: "center", marginBottom: "10px" }}
       >
-       Contact me
+        Contact me
       </Typography>
       <Box
         sx={{
