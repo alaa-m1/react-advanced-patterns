@@ -6,17 +6,20 @@ import parse from "html-react-parser";
 
 export const HomeDashboard = () => {
   const ABOUT_ME = `<Strong>Hi, I'm Alaa Mohammad, I'm a senior frontend developer</Strong>.<br/>
-  I have worked in frontend development fields over the last six years.💻 <br/>
+  I have worked in frontend development fields over the last six years 💻. <br/>
   Before that I worked for over seven years as a software developer 🖥️.</br>
-  <Strong>My principles:</Strong> Work hard 👨‍💻, be kind, exercise regularly and enjoy live with my family 👨‍👩‍👧‍👦 .<br/>
+  <Strong>My principles:</Strong> Work hard 👨‍💻, be kind, exercise regularly and enjoy live with my family 👨‍👩‍👧‍👦.<br/>
   I am self-motivated. I enjoy new challenges, collaborating with other developers and developing good software.`;
   return (
     <Box m={2}>
-      <Box mb={3}>
+      <Box
+        mb={3}
+        sx={{ display: "flex", flexDirection: "column", gap: "10px" }}
+      >
         <Box sx={{ display: "flex", justifyContent: "center" }}>
           <ProfilePhoto />
         </Box>
-        <Typography fontSize="18px" color="primary.light" mb="10px">
+        <Typography fontSize="18px" color="primary.light">
           {parse(ABOUT_ME)}
         </Typography>
         <Typography
