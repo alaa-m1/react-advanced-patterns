@@ -1,6 +1,6 @@
 # React Advanced Patterns
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Render Props, Higher Order Component, Proxy, Compound, Container / Presentational, Lazy Loading
 
 ## Available Scripts
 
